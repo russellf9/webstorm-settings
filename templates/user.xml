@@ -1,0 +1,12 @@
+<templateSet group="user">
+  <template name="todo" value="/**&#10;         todo - $desc$&#10;            @author $name$&#10;            @date $date$&#10;            @time $time$&#10;&#10;         */&#10;         $end$" description="makes a todo list" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="desc" expression="" defaultValue="&quot;Enter as String&quot;" alwaysStopAt="true" />
+    <variable name="name" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="time" expression="time()" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,118 @@
+<templateSet group="AngularJS ">
+  <template name="ngsd" value="(function () {&#10;&#10;    'use strict';&#10;&#10;&#10;    /**&#10;     *&#10;     * @author $name$&#10;     * @date $date$&#10;     *&#10;     * @name $module$:$directiveName$&#10;     *&#10;     * @param {data} $input1$ An input two-way binding&#10;     * @param {function} $function1$ An output function&#10;     * &#10;     * @description $description$&#10;     *&#10;     * Trying to follow the style guidelines from: {https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#angular-docs Angular 1 Style Guide &lt;br&gt;&#10;     * @example&#10;        &lt;pre&gt;&#10;         &lt;$nameDash$&#10;            $inputDash1$='data'&#10;            $functionDash1$='update'&gt;&#10;         &lt;$nameDash$/&gt;&#10;        &lt;pre&gt;&#10;     *&#10;     */&#10;     &#10;     /* global angular */&#10;&#10;    angular.module('$module$', [])&#10;        .directive('$directiveName$', $directiveName$);&#10;&#10;    function $directiveName$Controller($log, $scope) {&#10;    &#10;        function update() {&#10;            if (typeof $scope.$function1$ === 'function') {&#10;                $scope.$function1$()();&#10;            } else {&#10;                $log.error('An update function is required!');&#10;            }&#10;        }&#10;    }&#10;&#10;    function $directiveName$() {&#10;        return {&#10;            restrict: 'AE',&#10;            scope: {&#10;                $input1$: '=',&#10;                $function1$: '&amp;'&#10;            },&#10;            templateUrl: '/public/ $nameSnake$.html',&#10;            controller: $directiveName$Controller&#10;        };&#10;    }&#10;}());&#10;$end$" description="An Angular Directive with a Controller function ( MY ADDITION )" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="&quot;module.name&quot;" alwaysStopAt="true" />
+    <variable name="directiveName" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="input1" expression="" defaultValue="&quot;input&quot;" alwaysStopAt="true" />
+    <variable name="function1" expression="" defaultValue="&quot;updateFn&quot;" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="&quot;Add a description of what your Directive does!&quot;" alwaysStopAt="true" />
+    <variable name="inputDash1" expression="lowercaseAndDash(input1)" defaultValue="" alwaysStopAt="true" />
+    <variable name="functionDash1" expression="lowercaseAndDash(function1)" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameSnake" expression="snakeCase(directiveName)" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameDash" expression="lowercaseAndDash(directiveName)" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ngf" value="(function () {&#10;&#10;    'use strict';&#10;&#10;&#10;    /**&#10;     *&#10;     * @author $name$&#10;     * @date $date$&#10;     *&#10;     * @name $module$:$factoryName$&#10;     *&#10;     * @param {obj} $value1$ An accessible member&#10;     * @param {function} $function1$ A function the Factory returns&#10;     * @param {function} $function2$ A function the Factory returns&#10;     *&#10;     * // define module requirements&#10;     * @requires $dependancy1$&#10;     * @requires $dependancy2$&#10;     *&#10;     * // define `imports`&#10;     * @requires $import1$&#10;     * @requires $import2$&#10;     * &#10;     * @description $description$&#10;     *&#10;     * Trying to follow the style guidelines from: {https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#angular-docs Angular 1 Style Guide &lt;br&gt;&#10;     *&#10;     */&#10;     &#10;     // Ideally each Directive will have a unique package, so this try, catch won`t be required &lt;br&gt;&#10;     // Each package needs to be defined in their own module &lt;br&gt;&#10;     var module;&#10;&#10;    try {&#10;        module = angular.module('$module$');&#10;    } catch (err) {&#10;        module = angular.module('$module$', []);&#10;    }&#10;    &#10;    module.factory('$factoryName$', $factoryName$);&#10;    &#10;    $factoryName$.$$inject = ['$dependancy1$', '$dependancy2$'];&#10;&#10;    function $factoryName$($import1$, $import2$) {&#10;    &#10;       // ==== ACCESSIBLE MEMBERS ==== &#10;       var $value1$ = '';&#10;       &#10;       var service = { };&#10;       &#10;       service.$function1$ = $function1$;&#10;       service.$function2$ = $function2$;&#10;       &#10;       return service;&#10;       &#10;       // ==== IMPLEMENTATION OF FUNCTIONS ====&#10;       function $function1$() {&#10;            // implementation details go here&#10;       }&#10;       &#10;       function $function2$() {&#10;            // implementation details go here&#10;       }&#10;    }&#10;}());&#10;$end$" description="An Angular Factory (MY ADDITION)" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="&quot;module.name&quot;" alwaysStopAt="true" />
+    <variable name="factoryName" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="value1" expression="" defaultValue="&quot;currentName&quot;" alwaysStopAt="true" />
+    <variable name="function1" expression="" defaultValue="&quot;setValue&quot;" alwaysStopAt="true" />
+    <variable name="function2" expression="" defaultValue="&quot;getValue&quot;" alwaysStopAt="true" />
+    <variable name="dependancy1" expression="" defaultValue="&quot;module1&quot;" alwaysStopAt="true" />
+    <variable name="dependancy2" expression="" defaultValue="&quot;module2&quot;" alwaysStopAt="true" />
+    <variable name="import1" expression="" defaultValue="&quot;import1&quot;" alwaysStopAt="true" />
+    <variable name="import2" expression="" defaultValue="&quot;import1&quot;" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="&quot;Add a description of what your Factory Service does!&quot;" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="ngf1" value="(function () {&#10;&#10;    'use strict';&#10;&#10;&#10;    /**&#10;     *&#10;     * @author $name$&#10;     * @date $date$&#10;     *&#10;     * @name&#10;     * $module$:$factoryName$&#10;     *&#10;     * @param {obj} $value1$ An accessible member&#10;     * @param {function} $function1$ A function the Factory returns&#10;     * @param {function} $function2$ A function the Factory returns&#10;     *&#10;     * // define module requirements&#10;     * @requires $dependancy1$&#10;     * @requires $dependancy2$&#10;     *&#10;     * // define `imports`&#10;     * @requires $import1$&#10;     * @requires $import2$&#10;     * &#10;     * @description $description$&#10;     * Trying to follow the style guidelines from: {https://github.com/johnpapa/angular-styleguide/blob/master/a1/README.md#angular-docs Angular 1 Style Guide &lt;br&gt;&#10;     *&#10;     */&#10;     &#10;     // Ideally each Directive will have a unique package, so this try, catch won`t be required &lt;br&gt;&#10;     // Each package needs to be defined in their own module &lt;br&gt;&#10;     var module;&#10;&#10;    try {&#10;        module = angular.module('$module$');&#10;    } catch (err) {&#10;        module = angular.module('$module$', [])&#10;    }&#10;    &#10;    module.factory('$factoryName$', $factoryName$);&#10;    &#10;    $factoryName$.$$inject = ['$dependancy1$', '$dependancy2$'];&#10;&#10;    function $factoryName$($import1$, $import2$) {&#10;    &#10;       // ==== ACCESSIBLE MEMBERS ==== &#10;       var $value1$ = '';&#10;       &#10;       var service = { };&#10;       &#10;       service.$function1$ = $function1$;&#10;       service.$function2$ = $function2$;&#10;       &#10;       return service;&#10;       &#10;       // ==== IMPLEMENTATION OF FUNCTIONS ====&#10;       function $function1$() {&#10;            // implementation details go here&#10;       }&#10;       &#10;       function $function2$() {&#10;            // implementation details go here&#10;       }&#10;    }&#10;}());&#10;$end$" description="An Angular Facory" toReformat="false" toShortenFQNames="true">
+    <variable name="name" expression="user()" defaultValue="" alwaysStopAt="true" />
+    <variable name="date" expression="date()" defaultValue="" alwaysStopAt="true" />
+    <variable name="module" expression="" defaultValue="&quot;module.name&quot;" alwaysStopAt="true" />
+    <variable name="factoryName" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="value1" expression="" defaultValue="&quot;currentName&quot;" alwaysStopAt="true" />
+    <variable name="function1" expression="" defaultValue="&quot;setValue&quot;" alwaysStopAt="true" />
+    <variable name="function2" expression="" defaultValue="&quot;getValue&quot;" alwaysStopAt="true" />
+    <variable name="dependancy1" expression="" defaultValue="&quot;module1&quot;" alwaysStopAt="true" />
+    <variable name="dependancy2" expression="" defaultValue="&quot;module2&quot;" alwaysStopAt="true" />
+    <variable name="import1" expression="" defaultValue="&quot;import1&quot;" alwaysStopAt="true" />
+    <variable name="import2" expression="" defaultValue="&quot;import1&quot;" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="&quot;Add a description of what your Factory Service does!&quot;" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="nghg" value="$scope.$watch('$watchExpr$',function(newValue, oldValue){&#10;  $END$&#10;});" description="Creates a HTTP get" toReformat="false" toShortenFQNames="true">
+    <variable name="watchExpr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
+  </template>
+  <template name="$http" value="return $http.get($url$);&#10;$END$" description="Defines a new $http request" toReformat="true" toShortenFQNames="true">
+    <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="$ngc" value="(function () {&#10;&#10;    'use strict';&#10;    &#10;    angular&#10;        .module($package$)&#10;        .controller('$controllerName$', $controllerName$);&#10;        &#10;    $controllerName$.$inject = [$injectables$];&#10;    &#10;    &#10;    function $controllerName$($dependancies$) {&#10;    &#10;        var $name$ = this;&#10;        &#10;        $name$.$functionName$ = $functionName$;&#10;        &#10;        &#10;        // ==== Function definitions ====&#10;        &#10;        function $functionName$() {&#10;            // implement function here...&#10;        }&#10;    &#10;    }  &#10;    &#10;    &#10;   &#10;&#10;})();&#10;$END$&#10;&#10;" description="Define a new Angular Controller. You can change the controller name and parameters. (MY ADDITION)" toReformat="true" toShortenFQNames="true">
+    <variable name="package" expression="" defaultValue="&quot;myApp.package&quot;" alwaysStopAt="true" />
+    <variable name="controllerName" expression="" defaultValue="&quot;myController&quot;" alwaysStopAt="true" />
+    <variable name="injectables" expression="" defaultValue="&quot;module1, module2&quot;" alwaysStopAt="true" />
+    <variable name="dependancies" expression="" defaultValue="&quot;$log, $scope&quot;" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="&quot;aName&quot;" alwaysStopAt="true" />
+    <variable name="functionName" expression="" defaultValue="&quot;getData&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="$t" value="    $service$.$getFunction$()&#10;            .then($successFunction$)&#10;            .catch($errorFunction$)&#10;            .finally(function () {&#10;                $finallyFunction$;&#10;            });&#10;$END$" description="Handles a $http request ( MY ADDITION )" toReformat="true" toShortenFQNames="true">
+    <variable name="service" expression="" defaultValue="&quot;service&quot;" alwaysStopAt="true" />
+    <variable name="getFunction" expression="" defaultValue="&quot;getData&quot;" alwaysStopAt="true" />
+    <variable name="successFunction" expression="" defaultValue="&quot;onSuccess&quot;" alwaysStopAt="true" />
+    <variable name="errorFunction" expression="" defaultValue="&quot;onError&quot;" alwaysStopAt="true" />
+    <variable name="finallyFunction" expression="" defaultValue="&quot;$scope.update()&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="ngm" value="(function () {&#10;&#10;    'use strict';&#10;&#10;    /* global angular */&#10;    &#10;    angular.module('$moduleName$',['$moduleDependencies$']);&#10;    &#10;}());&#10;$END$" description="A new angular module without a config function. (THE MODULE TEMPLATE TO USE!)" toReformat="true" toShortenFQNames="true">
+    <variable name="moduleName" expression="" defaultValue="&quot;my.module&quot;" alwaysStopAt="true" />
+    <variable name="moduleDependencies" expression="" defaultValue="&quot;injectedModule&quot;" alwaysStopAt="true" />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="$ngcs" value="(function () {&#10;&#10;    'use strict';&#10;&#10;&#10;    /**&#10;     *&#10;     * @name $module$:$directiveName$&#10;     *&#10;     * @param {data} $input1$ An input two-way binding&#10;     * @param {function} $function1$ An output function&#10;     * &#10;     * @description $description$&#10;     *&#10; &#10;        &lt;pre&gt;&#10;         &lt;$nameDash$&#10;            $inputDash1$='data'&#10;            $functionDash1$='update'&gt;&#10;         &lt;$nameDash$/&gt;&#10;        &lt;pre&gt;&#10;     *&#10;     */&#10;     &#10;     /* global angular */&#10;&#10;    angular.module('$module$', [])&#10;        .component('$directiveName$', $directiveName$);&#10;&#10;    function $directiveName$Controller($log, $scope) {&#10;    &#10;        var self = this;&#10;        &#10;        self.updateFn()(self.selected);&#10;&#10;        self.changeZone = function(zone) {&#10;            self.selected = zone;&#10;            self.updateFn()(zone);&#10;        };&#10;    }&#10;&#10;    function $directiveName$() {&#10;        return {&#10;            bindings: {&#10;                updateFn: '&amp;',&#10;                selected: '='&#10;            }&#10;            templateUrl: '/public/ $nameSnake$.html',&#10;            controller: $directiveName$Controller&#10;        };&#10;    }&#10;}());&#10;$end$" description="An Angular Component  ( MY ADDITION" toReformat="false" toShortenFQNames="true">
+    <variable name="module" expression="" defaultValue="&quot;module.name&quot;" alwaysStopAt="true" />
+    <variable name="directiveName" expression="fileNameWithoutExtension()" defaultValue="" alwaysStopAt="true" />
+    <variable name="input1" expression="" defaultValue="&quot;input&quot;" alwaysStopAt="true" />
+    <variable name="function1" expression="" defaultValue="&quot;updateFn&quot;" alwaysStopAt="true" />
+    <variable name="description" expression="" defaultValue="&quot;Add a description of what your Directive does!&quot;" alwaysStopAt="true" />
+    <variable name="inputDash1" expression="lowercaseAndDash(input1)" defaultValue="" alwaysStopAt="true" />
+    <variable name="functionDash1" expression="lowercaseAndDash(function1)" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameSnake" expression="snakeCase(directiveName)" defaultValue="" alwaysStopAt="true" />
+    <variable name="nameDash" expression="lowercaseAndDash(directiveName)" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="qModal" value="&lt;div class=&quot;modal-dialog&quot;&#10;     role=&quot;dialog&quot;&gt;&#10;    &lt;div class=&quot;modal-content&quot;&gt;&#10;        &lt;div class=&quot;modal-header q-modal-header&quot;&gt;&#10;            &lt;button type=&quot;button&quot;&#10;                    class=&quot;close&quot;&#10;                    data-dismiss=&quot;modal&quot;&#10;                    ng-click=&quot;hideDialog()&quot;&gt;&#10;            &lt;/button&gt;&#10;            &lt;h4 class=&quot;modal-title&quot;&gt;&#10;                &lt;span translate&gt;$Title$&lt;/span&gt;&#10;            &lt;/h4&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;modal-sub-header&quot;&gt;&#10;            &lt;h6&gt;&#10;               $SubTitle$&#10;            &lt;/h6&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;modal-body&quot;&gt;&#10;            &lt;h6 translate class=&quot;instruction&quot;&gt;$Instruction$&lt;/h6&gt;&#10;        &lt;/div&gt;&#10;        &lt;div class=&quot;modal-footer&quot;&gt;&#10;            &lt;button class=&quot;btn btn-default&quot;&gt;&#10;                &lt;span translate&gt;$btn1$&lt;/span&gt;&#10;            &lt;/button&gt;&#10;            &lt;button class=&quot;btn btn-info&quot;&gt;&#10;                &lt;span translate&gt;$btn2$&lt;/span&gt;&#10;            &lt;/button&gt;&#10;        &lt;/div&gt;&#10;    &lt;/div&gt;&#10;&lt;/div&gt;" description="qPopup Template for V2" toReformat="false" toShortenFQNames="true">
+    <variable name="Title" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="SubTitle" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="Instruction" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="btn1" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="btn2" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="HTML" value="true" />
+    </context>
+  </template>
+</templateSet>

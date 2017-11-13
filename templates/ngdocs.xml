@@ -1,0 +1,27 @@
+<templateSet group="ngdocs">
+  <template name="$ngdd" value="/**&#10; * @ngdoc directive&#10; * @name $path$:$name$&#10; * @restrict 'AE'&#10; * @scope&#10; * @description&#10; * @requires&#10; */&#10; $END$" shortcut="TAB" description="Creates an JS Doc Style Code Block for an Angular Directive" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="$ngdm" value="/**&#10; * @ngdoc method&#10; * @name $name$&#10; * @methodOf $path$:$parent$&#10; * @description&#10; &#10; * @param {expression}&#10; * @param {expression}&#10; */&#10; $END$" shortcut="TAB" description="Creates an JS Doc Style Code Block for an Angular Method" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="parent" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+  <template name="$ngds" value="/**&#10; * @ngdoc service&#10; * @name $path$:$name$&#10; * @description&#10; *&#10; * @requires&#10; * @returns {object}&#10; */&#10; $END$" shortcut="TAB" description="Creates an JS Doc Style Code Block for an Angular Service" toReformat="true" toShortenFQNames="true" deactivated="true">
+    <variable name="path" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,65 @@
+<application>
+  <component name="libraryTable">
+    <library name="angular-gettext-DefinitelyTyped" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_angular-gettext_angular-gettext.d.ts" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_angular-gettext_angular-gettext.d.ts" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="angular-ui-bootstrap-DefinitelyTyped" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_angular-ui-bootstrap_angular-ui-bootstrap.d.ts" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_angular-ui-bootstrap_angular-ui-bootstrap.d.ts" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="angularjs-DefinitelyTyped" type="javaScript">
+      <CLASSES>
+        <root url="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/http_github.com_borisyankov_DefinitelyTyped_raw_master_angularjs_angular.d.ts" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="cordova-DefinitelyTyped" type="javaScript">
+      <properties>
+        <sourceFilesUrls>
+          <item url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_cordova_cordova.d.ts" />
+        </sourceFilesUrls>
+      </properties>
+      <CLASSES>
+        <root url="file://$APPLICATION_CONFIG_DIR$/javascript/extLibs/http_github.com_DefinitelyTyped_DefinitelyTyped_raw_master_cordova_cordova.d.ts" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="Dart SDK">
+      <CLASSES>
+        <root url="file://$USER_HOME$/sdks/dart/lib" />
+      </CLASSES>
+      <SOURCES />
+      <excluded>
+        <root url="file://$USER_HOME$/sdks/dart/lib/_chrome" />
+        <root url="file://$USER_HOME$/sdks/dart/lib/_internal" />
+      </excluded>
+    </library>
+    <library name="jasmine-DefinitelyTyped" type="javaScript">
+      <CLASSES>
+        <root url="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/http_github.com_borisyankov_DefinitelyTyped_raw_master_jasmine_jasmine.d.ts" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+    <library name="node-DefinitelyTyped" type="javaScript">
+      <CLASSES>
+        <root url="file://$USER_HOME$/Library/Caches/WebStorm7/extLibs/http_github.com_borisyankov_DefinitelyTyped_raw_master_node_node.d.ts" />
+      </CLASSES>
+      <SOURCES />
+    </library>
+  </component>
+</application>
