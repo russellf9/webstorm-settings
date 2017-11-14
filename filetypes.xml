@@ -10,6 +10,7 @@
       <mapping pattern="donut" type="PLAIN_TEXT" />
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
       <mapping pattern="server" type="PLAIN_TEXT" />
+      <mapping pattern=".function" type="PLAIN_TEXT" />
       <mapping pattern="test" type="PLAIN_TEXT" />
       <mapping pattern="teaService" type="PLAIN_TEXT" />
       <mapping ext="es_es" type="PLAIN_TEXT" />
