@@ -54,6 +54,7 @@
   </template>
   <template name="nghg" value="$scope.$watch('$watchExpr$',function(newValue, oldValue){&#10;  $END$&#10;});" description="Creates a HTTP get" toReformat="false" toShortenFQNames="true">
     <variable name="watchExpr" expression="" defaultValue="" alwaysStopAt="true" />
+    <context />
   </template>
   <template name="$http" value="return $http.get($url$);&#10;$END$" description="Defines a new $http request" toReformat="true" toShortenFQNames="true">
     <variable name="url" expression="" defaultValue="" alwaysStopAt="true" />
@@ -85,7 +86,9 @@
   <template name="ngm" value="(function () {&#10;&#10;    'use strict';&#10;&#10;    /* global angular */&#10;    &#10;    angular.module('$moduleName$',['$moduleDependencies$']);&#10;    &#10;}());&#10;$END$" description="A new angular module without a config function. (THE MODULE TEMPLATE TO USE!)" toReformat="true" toShortenFQNames="true">
     <variable name="moduleName" expression="" defaultValue="&quot;my.module&quot;" alwaysStopAt="true" />
     <variable name="moduleDependencies" expression="" defaultValue="&quot;injectedModule&quot;" alwaysStopAt="true" />
-    <context />
+    <context>
+      <option name="JS_STATEMENT" value="true" />
+    </context>
   </template>
   <template name="$ngcs" value="(function () {&#10;&#10;    'use strict';&#10;&#10;&#10;    /**&#10;     *&#10;     * @name $module$:$directiveName$&#10;     *&#10;     * @param {data} $input1$ An input two-way binding&#10;     * @param {function} $function1$ An output function&#10;     * &#10;     * @description $description$&#10;     *&#10; &#10;        &lt;pre&gt;&#10;         &lt;$nameDash$&#10;            $inputDash1$='data'&#10;            $functionDash1$='update'&gt;&#10;         &lt;$nameDash$/&gt;&#10;        &lt;pre&gt;&#10;     *&#10;     */&#10;     &#10;     /* global angular */&#10;&#10;    angular.module('$module$', [])&#10;        .component('$directiveName$', $directiveName$);&#10;&#10;    function $directiveName$Controller($log, $scope) {&#10;    &#10;        var self = this;&#10;        &#10;        self.updateFn()(self.selected);&#10;&#10;        self.changeZone = function(zone) {&#10;            self.selected = zone;&#10;            self.updateFn()(zone);&#10;        };&#10;    }&#10;&#10;    function $directiveName$() {&#10;        return {&#10;            bindings: {&#10;                updateFn: '&amp;',&#10;                selected: '='&#10;            }&#10;            templateUrl: '/public/ $nameSnake$.html',&#10;            controller: $directiveName$Controller&#10;        };&#10;    }&#10;}());&#10;$end$" description="An Angular Component  ( MY ADDITION" toReformat="false" toShortenFQNames="true">
     <variable name="module" expression="" defaultValue="&quot;module.name&quot;" alwaysStopAt="true" />
