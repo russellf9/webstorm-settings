@@ -60,7 +60,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name=".task" value="- [$STATUS$] $END$" description="Task Item - [ ] " toReformat="false" toShortenFQNames="false" deactivated="true">
+  <template name=".task" value="- [$STATUS$] $END$" description="Task Item - [ ]" toReformat="false" toShortenFQNames="false" deactivated="true">
     <variable name="STATUS" expression="" defaultValue=" " alwaysStopAt="true" />
     <context>
       <option name="OTHER" value="true" />
@@ -71,7 +71,7 @@
       <option name="OTHER" value="true" />
     </context>
   </template>
-  <template name=".toc" value="[TOC]: # $END$" description="Table of Contents [TOC]: # " toReformat="false" toShortenFQNames="false" deactivated="true">
+  <template name=".toc" value="[TOC]: # $END$" description="Table of Contents [TOC]: #" toReformat="false" toShortenFQNames="false" deactivated="true">
     <context>
       <option name="OTHER" value="true" />
     </context>

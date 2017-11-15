@@ -1,41 +1,30 @@
 <application>
   <component name="FindSettings">
-    <option name="customScope" value="Current File" />
-    <option name="defaultScopeName" value="Current File" />
-    <option name="showResultsInSeparateView" value="true" />
-    <option name="SHOW_RESULTS_IN_SEPARATE_VIEW" value="true" />
-    <option name="SEARCH_SCOPE" value="Current File" />
+    <option name="customScope" value="All Places" />
+    <option name="defaultScopeName" value="All Places" />
+    <option name="SEARCH_SCOPE" value="All Places" />
     <option name="FILE_MASK" value="*.scss" />
     <recentFileMasks>
+      <mask>*.properties</mask>
       <mask>*.jsp</mask>
       <mask>*.xml</mask>
-      <mask>*.as</mask>
-      <mask>*.mxml</mask>
-      <mask>*!.java</mask>
-      <mask>html</mask>
-      <mask>.html</mask>
-      <mask>*.JS</mask>
-      <mask>*.png</mask>
-      <mask>(!?:\.min)\.js$</mask>
-      <mask>*.eot</mask>
-      <mask>*.svg</mask>
-      <mask>*.js\</mask>
-      <mask>*.css</mask>
-      <mask>$</mask>
-      <mask>*.yml</mask>
-      <mask>*</mask>
-      <mask>*.json</mask>
-      <mask>*.yaml</mask>
-      <mask>*.html\</mask>
-      <mask>*.sass</mask>
-      <mask>*.less</mask>
-      <mask>*.ts</mask>
       <mask>*.java</mask>
+      <mask>*.as</mask>
+      <mask>*.css</mask>
+      <mask>*.mxml</mask>
+      <mask>*.mxm</mask>
+      <mask>*.mx</mask>
+      <mask>*.m</mask>
       <mask>*.js</mask>
-      <mask>*.js</mask>
-      <mask>*.js</mask>
-      <mask>.js</mask>
+      <mask>*.j</mask>
       <mask>*.html</mask>
+      <mask>*.htm</mask>
+      <mask>*.ht</mask>
+      <mask>*.h</mask>
+      <mask>*.</mask>
+      <mask>*.s</mask>
+      <mask>*.sc</mask>
+      <mask>*.scs</mask>
       <mask>*.scss</mask>
     </recentFileMasks>
   </component>
