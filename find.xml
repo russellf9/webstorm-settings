@@ -3,27 +3,16 @@
     <option name="customScope" value="All Places" />
     <option name="defaultScopeName" value="All Places" />
     <option name="localWholeWordsOnly" value="true" />
-    <option name="regularExpressions" value="true" />
     <option name="LOCAL_WHOLE_WORDS_ONLY" value="true" />
-    <option name="REGULAR_EXPRESSIONS" value="true" />
     <option name="SEARCH_SCOPE" value="All Places" />
     <option name="FILE_MASK" value="*.html" />
     <recentFileMasks>
-      <mask>*.properties</mask>
-      <mask>*.jsp</mask>
-      <mask>*.xml</mask>
-      <mask>*.java</mask>
-      <mask>*.as</mask>
-      <mask>*.css</mask>
-      <mask>*.mxml</mask>
-      <mask>*.mxm</mask>
       <mask>*.mx</mask>
       <mask>*.m</mask>
       <mask>*.htn</mask>
       <mask>*.jscss</mask>
       <mask>*.jscs</mask>
       <mask>*.jsc</mask>
-      <mask>*</mask>
       <mask>*.scss</mask>
       <mask>*.scs</mask>
       <mask>*.sc</mask>
@@ -33,6 +22,16 @@
       <mask>*.tml</mask>
       <mask>*.tm</mask>
       <mask>*.t</mask>
+      <mask>*.le</mask>
+      <mask>*.less</mask>
+      <mask>*.les</mask>
+      <mask>*.l</mask>
+      <mask>/</mask>
+      <mask>/h</mask>
+      <mask>/ht</mask>
+      <mask>/html</mask>
+      <mask>/htm</mask>
+      <mask>*</mask>
       <mask>*.</mask>
       <mask>*.h</mask>
       <mask>*.ht</mask>
