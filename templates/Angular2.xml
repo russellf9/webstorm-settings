@@ -1,5 +1,7 @@
 <templateSet group="Angular2">
-  <template name="nghg" value="return $http(get, url)" description="Creates a HTTP get" toReformat="false" toShortenFQNames="true" deactivated="true" />
+  <template name="nghg" value="return $http(get, url)" description="Creates a HTTP get" toReformat="false" toShortenFQNames="true" deactivated="true">
+    <context />
+  </template>
   <template name="ng2-bootstrap" value="import { enableProdMode } from '@angular/core';&#10;import { bootstrap } from '@angular/platform-browser-dynamic';&#10;&#10;import { $COMPONENT_NAME$ } from './$NAME$.component';&#10;&#10;// enableProdMode();&#10;&#10;bootstrap($COMPONENT_NAME$)&#10;  .then(success =&gt; console.log(`Bootstrap success`))&#10;  .catch(error =&gt; console.log(error));&#10;$END$" description="Angular2 bootstrap" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="COMPONENT_NAME" expression="" defaultValue="&quot;AppComponent&quot;" alwaysStopAt="true" />
     <variable name="NAME" expression="" defaultValue="&quot;name&quot;" alwaysStopAt="true" />
@@ -68,38 +70,38 @@
     <variable name="CSS_CLASS" expression="" defaultValue="&quot;cssClass&quot;" alwaysStopAt="true" />
     <variable name="EXPRESSION" expression="" defaultValue="&quot;expression&quot;" alwaysStopAt="true" />
     <context>
-      <option name="HTML" value="true" />
       <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
     </context>
   </template>
   <template name="ng2-ngFor" value="*ngFor=&quot;let $ITEM$ of $LIST$&quot;" description="Angular2 ngFor" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="ITEM" expression="" defaultValue="&quot;item&quot;" alwaysStopAt="true" />
     <variable name="LIST" expression="" defaultValue="&quot;list&quot;" alwaysStopAt="true" />
     <context>
-      <option name="HTML" value="true" />
       <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
     </context>
   </template>
   <template name="ng2-ngIf" value="*ngIf=&quot;$EXPRESSION$&quot;" description="Angular2 ngIf" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="EXPRESSION" expression="" defaultValue="&quot;expression&quot;" alwaysStopAt="true" />
     <context>
-      <option name="HTML" value="true" />
       <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
     </context>
   </template>
   <template name="ng2-ngModel" value="[(ngModel)]=&quot;$BINDING$&quot;" description="Angular2 ngModel" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="BINDING" expression="" defaultValue="&quot;binding&quot;" alwaysStopAt="true" />
     <context>
-      <option name="HTML" value="true" />
       <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
     </context>
   </template>
   <template name="ng2-ngStyle" value="[ngStyle]=&quot;{$STYLE$: $EXPRESSION$}&quot;" description="Angular2 ngStyle" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="STYLE" expression="" defaultValue="&quot;style&quot;" alwaysStopAt="true" />
     <variable name="EXPRESSION" expression="" defaultValue="&quot;expression&quot;" alwaysStopAt="true" />
     <context>
-      <option name="HTML" value="true" />
       <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
     </context>
   </template>
   <template name="ng2-ngSwitch" value="&lt;div [ngSwitch]=&quot;$CONDITION_EXPRESSION$&quot;&gt;&#10;    &lt;div *ngSwitchWhen=&quot;$EXPRESSION$&quot;&gt;$OUTPUT$&lt;/div&gt;&#10;    &lt;div *ngSwitchDefault&gt;$DEFAULT_OUTPUT$&lt;/div&gt;&#10;&lt;/div&gt;" description="Angular2 ngSwitch" toReformat="false" toShortenFQNames="true" deactivated="true">
@@ -114,8 +116,8 @@
   <template name="ng2-routerLink" value="[routerLink]=&quot;['$ROUTE_NAME$']&quot;" description="Angular2 routerLink" toReformat="false" toShortenFQNames="true" deactivated="true">
     <variable name="ROUTE_NAME" expression="" defaultValue="&quot;routeName&quot;" alwaysStopAt="true" />
     <context>
-      <option name="HTML" value="true" />
       <option name="HTML_TEXT" value="false" />
+      <option name="HTML" value="true" />
     </context>
   </template>
 </templateSet>
